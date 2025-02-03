@@ -11,8 +11,11 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
+
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Plus Jakarta Sans", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
@@ -276,6 +279,25 @@ h6 {
   padding-top: 5px;
 }
 
+
+/*----------
+Nyoba
+------------*/
+
+.email-icon {
+  height: 2.5rem;
+}
+.contact-icon {
+  cursor: default;
+}
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -476,7 +498,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 90%);
+  background: color-mix(in srgb, var(--background-color), transparent 95%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -938,8 +960,7 @@ section,
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  border-radius: 50%;
-  border: 4px solid var(--background-color);
+  border-radius: ;
   margin: 0 auto;
 }
 
@@ -995,8 +1016,8 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 7px;
+  height: 7px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
@@ -1161,7 +1182,7 @@ section,
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
